@@ -1,0 +1,14 @@
+[package]
+name = "watcher-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Tokio lets our bot run continuously and handle multiple tasks at once
+tokio = { version = "1.28", features = ["full"] }
+
+# Reqwest lets the bot make HTTP requests to check if devices are online
+reqwest = { version = "0.11", features = ["json"] }
+
+# Ethers lets the bot talk to your Solidity contract and sign transactions
+ethers = "2.0"
